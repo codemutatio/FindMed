@@ -5,7 +5,13 @@ const Images = [
   {uri: 'https://i.imgur.com/Ka8kNST.jpg'},
 ];
 
-export default locationData = [
+export const placeholder = {
+  label: 'Select facility type',
+  value: null,
+  color: '#767676',
+};
+
+export const locationData = [
     {
       coordinate: {
         latitude: 6.244673,

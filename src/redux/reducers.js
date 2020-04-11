@@ -1,5 +1,5 @@
 import * as TYPES from './actionTypes';
-import locationData from '../config/data';
+import { locationData} from '../config/data';
 
 const initialState = {
     filteredMarkers: [],
