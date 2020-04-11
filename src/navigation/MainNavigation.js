@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import MedMap from '../components/screens/MedMap';
+import DiscoverScreen from '../components/screens/Discover';
 
 const Stack = createStackNavigator();
 
@@ -16,7 +17,16 @@ const MainNavigation = () => (
         },
         headerTitleAlign: 'center',
         headerTintColor: '#fff',
-      }}>
+      }}
+      headerMode='none'
+      >
+      <Stack.Screen
+        name="DiscoverScreen"
+        component={DiscoverScreen}
+        options={{
+          title: 'Discover',
+        }}
+      />
       <Stack.Screen
         name="MedMap"
         component={MedMap}
