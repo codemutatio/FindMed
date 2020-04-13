@@ -7,7 +7,6 @@ import {setErrors, setLocations} from './actions';
 function* getFilteredLocations(payload) {
   try {
     const filteredLocations = yield call(fencedLocations, payload);
-    console.log('filter', filteredLocations);
     yield put(setLocations(filteredLocations));
   } catch (error) {
     yield put(setErrors({message: 'error filtering locations'}));

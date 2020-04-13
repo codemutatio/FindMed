@@ -15,7 +15,6 @@ export const requestLocationPermission = async (callback) => {
     }
   } else {
     const response = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE);
-    console.log('Iphone.response', response);
 
     if (response === 'granted') {
       getCurrentLocation(callback);
@@ -26,7 +25,6 @@ export const requestLocationPermission = async (callback) => {
 const getCurrentLocation = (callback) => {
   let data;
   Geolocation.getCurrentPosition((position) => {
-    console.log(JSON.stringify(position));
     let currentLocation = {
       latitude: position.coords.latitude,
       longitude: position.coords.longitude,
@@ -48,8 +46,6 @@ export const fencedLocations = (payload: FilterMarker) => {
     const distanceFromCenter = distance(from, to, options);
     if (marker.category === category && distanceFromCenter <= searchRadius) {
       marker.eta = Math.round(distanceFromCenter / (1.78816 * 60));
-      console.log('mert', marker);
-      return marker;
     }
   });
 };
