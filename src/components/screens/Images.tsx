@@ -1,64 +1,31 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  TouchableOpacity,
-  StyleSheet,
-  Image,
-} from 'react-native';
+import {View, FlatList, TouchableOpacity, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import styles from '../../styles/styles';
 
 const ImageItem = ({img}) => {
   const navigation = useNavigation();
   return (
     <TouchableOpacity
-      style={{
-        width: 160,
-        height: 160,
-        borderRadius: 15,
-        marginRight: 5,
-        overflow: 'hidden',
-      }}
+      style={styles.imageContainer}
       onPress={() => navigation.navigate('ImageView', {img})}>
-      <Image
-        source={img}
-        style={{
-          width: 200,
-          height: 200,
-        }}
-      />
+      <Image source={img} style={styles.imageImg} />
     </TouchableOpacity>
   );
 };
 
 const Images = ({images}) => {
   return (
-    <View style={{flex: 1, backgroundColor: '#1A1A1C', padding: 10}}>
+    <View style={styles.imageListContainer}>
       <FlatList
         horizontal={true}
         data={images}
         renderItem={({item}) => <ImageItem img={item} />}
         keyExtractor={(item) => item.id}
-        style={{width: '100%'}}
+        style={styles.imageList}
       />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  item: {
-    backgroundColor: '#f9c2ff',
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
-  },
-  title: {
-    fontSize: 32,
-  },
-});
 
 export default Images;

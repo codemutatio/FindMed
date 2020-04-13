@@ -6,97 +6,28 @@ import styles from '../../styles/styles';
 const Overview = ({marker}) => {
   const {description, address, contactNumber, website, opening} = marker;
   return (
-    <View style={{flex: 1, backgroundColor: '#1A1A1C', padding: 10}}>
+    <View style={styles.overviewContainer}>
       <ScrollView>
-        <View
-          style={{
-            borderWidth: 1,
-            borderBottomColor: '#2D2D2D',
-            paddingBottom: 5,
-          }}>
-          <Text
-            style={{
-              fontFamily: 'Poppins-Regular',
-              fontSize: 16,
-              color: '#fff',
-            }}>
+        <View style={styles.overviewScroll}>
+          <Text style={styles.overviewDescriptionContainer}>
             About Facility
           </Text>
-          <Text
-            style={{
-              fontFamily: 'Poppins-Regular',
-              fontSize: 14,
-              color: '#C0C0C0',
-            }}>
-            {description}
-          </Text>
+          <Text style={styles.overviewDescription}>{description}</Text>
         </View>
-        <View
-          style={{
-            borderWidth: 1,
-            borderBottomColor: '#2D2D2D',
-            paddingBottom: 5,
-          }}>
-          <Text
-            style={{
-              fontFamily: 'Poppins-Regular',
-              fontSize: 16,
-              color: '#fff',
-              marginTop: 10,
-            }}>
-            More About
-          </Text>
+        <View style={styles.overviewAboutContainer}>
+          <Text style={styles.overviewAbout}>More About</Text>
           <View>
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                marginBottom: 10,
-              }}>
+            <View style={styles.overviewAddressContainer}>
               <Icon name="enviromento" size={30} color="#AA215C" />
-              <Text
-                style={{
-                  color: '#C0C0C0',
-                  fontFamily: 'Poppins-Regular',
-                  fontSize: 14,
-                  marginLeft: 10,
-                }}>
-                {address}
-              </Text>
+              <Text style={styles.overviewAddress}>{address}</Text>
             </View>
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                marginBottom: 10,
-              }}>
+            <View style={styles.overviewOpeningContainer}>
               <Icon name="clockcircleo" size={30} color="#AA215C" />
-              <Text
-                style={{
-                  color: '#C0C0C0',
-                  fontFamily: 'Poppins-Regular',
-                  fontSize: 14,
-                  marginLeft: 10,
-                }}>
-                {opening}
-              </Text>
+              <Text style={styles.overviewOpening}>{opening}</Text>
             </View>
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                marginBottom: 10,
-              }}>
+            <View style={styles.overviewContactContainer}>
               <Icon name="phone" size={30} color="#AA215C" />
-              <Text
-                style={{
-                  color: '#C0C0C0',
-                  fontFamily: 'Poppins-Regular',
-                  fontSize: 14,
-                  marginLeft: 10,
-                }}>
-                {contactNumber}
-              </Text>
+              <Text style={styles.overviewContact}>{contactNumber}</Text>
             </View>
             <View style={styles.overviewWebsiteContainer}>
               <Icon name="earth" size={30} color="#AA215C" />

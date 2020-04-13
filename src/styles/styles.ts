@@ -68,6 +68,158 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
+  infoContainer: {
+    flex: 1,
+    backgroundColor: '#1A1A1C',
+  },
+  infoImageContainer: {
+    width: '100%',
+  },
+  infoBar: {
+    backgroundColor: '#1A1A1C',
+    borderWidth: 1,
+    borderBottomColor: '#2D2D2D',
+    borderTopColor: '#2D2D2D',
+  },
+  infoLabel: {
+    fontFamily: 'Poppins-Medium',
+  },
+  infoIndic: {
+    backgroundColor: 'white',
+  },
+  infoTitleContainer: {
+    padding: 10,
+  },
+  infoTitle: {
+    color: '#fff',
+    fontSize: 24,
+    fontFamily: 'Poppins-Regular',
+  },
+  infoCategory: {
+    fontSize: 13,
+    color: '#C4C4C4',
+    fontFamily: 'Poppins-Regular',
+  },
+  infoRatedBy: {
+    fontSize: 12,
+    color: '#C0C0C0',
+    fontFamily: 'Poppins-Regular',
+  },
+  infoRate: {
+    fontSize: 12,
+    color: '#C0C0C0',
+    fontFamily: 'Poppins-Regular',
+    marginRight: 5,
+  },
+  infoRatingContainer: {
+    flexDirection: 'row',
+  },
+  infoRating: {
+    marginRight: 5,
+    width: 80,
+  },
+  infoImage: {
+    width: '100%',
+    height: 200,
+  },
+  infoPacity: {
+    position: 'absolute',
+    top: 10,
+    left: 15,
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    padding: 10,
+    borderRadius: 50,
+  },
+  imageImg: {
+    width: 200,
+    height: 200,
+  },
+  imageContainer: {
+    width: 160,
+    height: 160,
+    borderRadius: 15,
+    marginRight: 5,
+    overflow: 'hidden',
+  },
+  imageListContainer: {
+    flex: 1,
+    backgroundColor: '#1A1A1C',
+    padding: 10,
+  },
+  imageList: {
+    width: '100%',
+  },
+  imageViewContainer: {
+    flex: 1,
+    backgroundColor: '#1A1A1C',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  imageViewImg: {
+    width: '100%',
+    height: 300,
+  },
+  imageViewPacity: {
+    position: 'absolute',
+    top: 10,
+    left: 15,
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    padding: 10,
+    borderRadius: 50,
+  },
+  overviewContainer: {
+    flex: 1,
+    backgroundColor: '#1A1A1C',
+    padding: 10,
+  },
+  overviewDescriptionContainer: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 16,
+    color: '#fff',
+  },
+  overviewScroll: {
+    borderWidth: 1,
+    borderBottomColor: '#2D2D2D',
+    paddingBottom: 5,
+  },
+  overviewDescription: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    color: '#C0C0C0',
+  },
+  overviewAbout: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 16,
+    color: '#fff',
+    marginTop: 10,
+  },
+  overviewAboutContainer: {
+    borderWidth: 1,
+    borderBottomColor: '#2D2D2D',
+    paddingBottom: 5,
+  },
+  overviewAddressContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  overviewAddress: {
+    color: '#C0C0C0',
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    marginLeft: 10,
+  },
+  overviewOpeningContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  overviewOpening: {
+    color: '#C0C0C0',
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    marginLeft: 10,
+  },
   overviewWebsite: {
     color: '#C0C0C0',
     fontFamily: 'Poppins-Regular',
@@ -78,6 +230,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 10,
+  },
+  overviewContactContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  overviewContact: {
+    color: '#C0C0C0',
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    marginLeft: 10,
   },
   reviewContainer: {
     marginBottom: 15,
