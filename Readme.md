@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="/assets/images/FindMed.png">
+  <a href="assets\images\FindMed.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -40,7 +40,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]('/assets/images/FindMed1.png)
+[![Product Name Screen Shot][product-screenshot]]('assets\images\FindMed1.png')
 
 Find Med is a mobile based application to help users find medical facilities (Hospitals, Pharmacies, Medical Laboratories, etc) close to their locations. The Find Med app also provides users with other useful information such as:
 * ETA (time it wll take the user to get to the facility)
