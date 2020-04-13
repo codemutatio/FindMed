@@ -46,6 +46,7 @@ export const fencedLocations = (payload: FilterMarker) => {
     const distanceFromCenter = distance(from, to, options);
     if (marker.category === category && distanceFromCenter <= searchRadius) {
       marker.eta = Math.round(distanceFromCenter / (1.78816 * 60));
+      return marker;
     }
   });
 };
